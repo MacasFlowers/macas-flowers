@@ -59,3 +59,60 @@ footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #666; }
   header p { font-size: 1rem; }
   .btn-wa { padding: 0.8rem 1.5rem; font-size: 1rem; }
 }
+/* ================= RESPONSIVE FIXES ================= */
+
+/* Contenedor centrado para pantallas grandes */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header ocupa todo el ancho pero contenido centrado */
+header {
+  margin: 0 -1rem 2rem -1rem; /* Compensa el padding de body */
+  padding: 3rem 1rem;
+  border-radius: 0;
+}
+
+/* Botón no crece en desktop */
+.btn-wa {
+  max-width: 300px;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Galería: máximo 3 columnas, centrada */
+@media (min-width: 768px) {
+  .grid {
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+}
+
+/* Tipografía escalable */
+html {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Imágenes nunca se desbordan */
+picture img, img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Texto en desktop no queda pegado a los bordes */
+section {
+  margin: 2rem 0;
+}
+@media (min-width: 768px) {
+  section {
+    padding: 2rem 0;
+  }
+}
