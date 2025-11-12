@@ -1,0 +1,12 @@
+{
+  "name": "Maca's Flowers",
+  "short_name": "MacaFlowers",
+  "start_url": "/macas-flowers/",
+  "display": "standalone",
+  "background_color": "#f8e8f8",
+  "theme_color": "#f8e8f8",
+  "icons": [
+    { "src": "assets/img/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/img/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

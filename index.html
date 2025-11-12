@@ -2,57 +2,146 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Maca's Flowers – Ramos con estilo | Bogotá</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Suscripción de ramos frescos cada 15 días y arreglos personalizados en Bogotá. Envío gratis.">
+  <title>Maca's Flowers – Suscripción de ramos frescos | Bogotá</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Ramos de estación cada 15 días. Envío gratis en Bogotá. Personalizados con amor.">
+  <meta name="keywords" content="suscripción de flores, ramos a domicilio, arreglos personalizados, flores Bogotá">
+  <meta name="author" content="Maca's Flowers">
+  <link rel="canonical" href="https://macasflowers.github.io/macas-flowers/">
+  
+  <!-- Open Graph (Facebook, Instagram) -->
+  <meta property="og:title" content="Maca's Flowers – Suscripción de ramos">
+  <meta property="og:description" content="Recibe flores frescas sin salir de casa. Suscripción flexible, cancela cuando quieras.">
+  <meta property="og:image" content="https://macasflowers.github.io/macas-flowers/img/logo.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:url" content="https://macasflowers.github.io/macas-flowers/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maca's Flowers">
+  <meta name="twitter:description" content="Suscripción de ramos frescos en Bogotá">
+  <meta name="twitter:image" content="https://macasflowers.github.io/macas-flowers/img/logo.jpg">
+
+  <!-- JSON-LD (Rich Snippets) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "name": "Maca's Flowers",
+    "image": "https://macasflowers.github.io/macas-flowers/img/logo.jpg",
+    "logo": "https://macasflowers.github.io/macas-flowers/img/logo.jpg",
+    "telephone": "+57-312-334-1080",
+    "url": "https://macasflowers.github.io/macas-flowers/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bogotá",
+      "addressRegion": "Cundinamarca",
+      "addressCountry": "CO"
+    },
+    "priceRange": "COP 45000 - 90000",
+    "openingHours": "Mo-Su 08:00-20:00",
+    "offers": {
+      "@type": "Offer",
+      "name": "Suscripción 2 ramos/mes",
+      "price": "90000",
+      "priceCurrency": "COP",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="img/logo.jpg" as="image">
+  
+  <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- Google Fonts (opcional) -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome para el ícono de WA -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#f8e8f8">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/logo.jpg">
+
+  <!-- iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Maca's Flowers">
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  
   <header>
+    <img src="img/logo.jpg" alt="Maca's Flowers Logo" width="64" height="64" loading="eager" fetchpriority="high">
     <h1>Maca's Flowers</h1>
-    <p>Flores con estilo &plus; suscripción sin complicaciones</p>
-    <a class="btn-wa" href="https://wa.me/573123341080?text=Hola,%20quiero%20recibir%20mi%20primer%20ramo%20🌸" target="_blank">
-      <i class="fab fa-whatsapp"></i> Pide por WhatsApp
+    <p>Flores con estilo + suscripción sin complicaciones</p>
+    <a class="btn-wa" href="https://wa.me/573123341080?text=Quiero%20mi%20suscripción%20🌸" target="_blank" rel="noopener">
+      <span aria-hidden="true">💬</span> Comprar por WhatsApp
     </a>
   </header>
 
-  <section id="how">
-    <h2>¿Cómo funciona?</h2>
-    <ol>
-      <li>Escoge tu plan (suscripción o ramo único).</li>
-      <li>Recibe flores de estación cada 15 días.</li>
-      <li>Disfruta, cambia o cancela cuando quieras.</li>
-    </ol>
-  </section>
+  <main id="main">
+    <section id="how" aria-labelledby="how-h">
+      <h2 id="how-h">¿Cómo funciona?</h2>
+      <ol>
+        <li><strong>Escoge tu plan:</strong> Suscripción mensual o ramo único.</li>
+        <li><strong>Recibe flores frescas:</strong> Cada 15 días en tu puerta.</li>
+        <li><strong>Control total:</strong> Pausa, cambia o cancela cuando quieras.</li>
+      </ol>
+    </section>
 
-  <section id="gallery">
-    <h2>Portafolio</h2>
-    <div class="grid">
-      <img src="img/ramo1.jpeg" alt="Ramo rosas naranja" loading="lazy">
-      <img src="img/ramo2.jpeg" alt="Ramo pastel" loading="lazy">
-      <img src="img/ramo3.jpg" alt="Arreglo para él" loading="lazy">
-      <!-- agrégalas después -->
-    </div>
-  </section>
+    <section id="gallery" aria-labelledby="gal-h">
+      <h2 id="gal-h">Portafolio</h2>
+      <div class="grid">
+        <article>
+          <picture>
+            <source srcset="img/ramo1.jpeg" type="image/jpeg">
+            <img src="img/ramo1.jpeg" loading="lazy" width="800" height="600" alt="Ramo de rosas naranja con estilo">
+          </picture>
+          <h3>Ramos de Temporada</h3>
+        </article>
+        
+        <article>
+          <picture>
+            <source srcset="img/ramo2.jpeg" type="image/jpeg">
+            <img src="img/ramo2.jpeg" loading="lazy" width="800" height="600" alt="Ramo pastel suave">
+          </picture>
+          <h3>Arreglos Personalizados</h3>
+        </article>
+        
+        <article>
+          <picture>
+            <source srcset="img/ramo3.jpg" type="image/jpeg">
+            <img src="img/ramo3.jpg" loading="lazy" width="800" height="600" alt="Ramo moderno para él">
+          </picture>
+          <h3>Para Él</h3>
+        </article>
+      </div>
+    </section>
 
-  <section id="testi">
-    <h2>Testimonios</h2>
-    <blockquote>
-      “Llegan siempre frescas y el sticker es un detalle hermoso.”
-      <cite>— Paula V.</cite>
-    </blockquote>
-  </section>
+    <section id="testi" aria-labelledby="test-h">
+      <h2 id="test-h">Lo que dicen nuestros clientes</h2>
+      <blockquote>
+        <p>“Llegan siempre frescas y el sticker es un detalle hermoso. ¡La suscripción me ha salvado en cumpleaños!”</p>
+        <footer>— Paula V., suscriptora desde 2025</footer>
+      </blockquote>
+    </section>
+
+    <section id="cta" aria-labelledby="cta-h">
+      <h2 id="cta-h">¿Listo para empezar?</h2>
+      <p>Haz tu primer pedido hoy y recibe un <strong>10% de descuento</strong>.</p>
+      <a class="btn-wa" href="https://wa.me/573123341080?text=Hola,%20quiero%20mi%20primer%20ramo%20con%20descuento%20🌸" target="_blank" rel="noopener">
+        💬 Iniciar suscripción
+      </a>
+    </section>
+  </main>
 
   <footer>
-    <p>Envíos a Bogotá y Sabana. &copy; <span id="year"></span> Maca's Flowers</p>
+    <p>Envíos a Bogotá y Sabana. &copy; <span id="year"></span> Maca's Flowers. <a href="https://wa.me/573123341080">Contacto</a></p>
   </footer>
 
-  <!-- Script mínimo: año dinámico + smooth scroll (si quieres) -->
+  <!-- Scripts -->
   <script src="js/main.js"></script>
 </body>
 </html>
